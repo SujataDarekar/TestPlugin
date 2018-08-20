@@ -14,7 +14,7 @@ install:
  # - if [ ! -z "$GPG_OWNERTRUST" ]; then echo $GPG_OWNERTRUST | base64 --decode | $GPG_EXECUTABLE --import-ownertrust; fi
   
 
-script:
+script
    - mvn clean
    - mvn package
   # - mvn --settings .travis/settings.xml clean  verify -Dgpg.passphrase=$GPG_PASSPHRASE
